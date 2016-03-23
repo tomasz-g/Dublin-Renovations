@@ -37,7 +37,7 @@ body {
 	height:20px;
 }
 #call {
-	visibility:hidden;
+	visibility:visible;
 	margin-top:30px;
 	float:right;
 	width:40%;
@@ -75,9 +75,37 @@ ul.menu li a {
 ul.menu li a:hover{
 	text-decoration:underline;
 }
-#uderHeader {
+#underText {
+	background:url("./images/underHeaderBackground1.jpg");
+	background-size:cover;
+	width:100%;
+	height:200px;
+	margin-bottom:100px;
+	padding-top:20px;
+}
+#underText p  {
+	padding:20px 0 0 220px;
+	margin:0;
+	text-align:left;
+	font-family:Impact, "Arial Black", sans-serif;
+	font-size:170%;
+	color:black;
+}
+#underText span {
+	padding-top:20px;
+	font-size:200%;
+}
+#mainTextBackground {
+	width:100%;
+	height:720px;
+	background:url("./images/underHeaderBackground3.jpg");
 	padding:0;
 	margin:0;
+	background-size:cover;
+}
+#uderHeader {
+	padding-top:20px;
+	margin-left:220px;
 	width:45%;
 	height:70px;
 }
@@ -90,16 +118,7 @@ ul.menu li a:hover{
 	color:black;
 }
 #uderHeader span {
-	padding-top:20px;
 	font-size:200%;
-}
-#mainTextBackground {
-	width:100%;
-	height:700px;
-	background:url("./images/underHeaderBackground3.jpg");
-	padding:0;
-	margin:0;
-	background-size:cover;
 }
 #mainText {
 	padding:20px;
@@ -112,6 +131,20 @@ ul.menu li a:hover{
 #mainText p {
 	color:black;
 	font-size:200%;
+	text-indent:20px;
+	font-family:Arial, Impact, "Arial Black", sans-serif;
+	text-align:justify;
+}
+#mainTextPl {
+	width:80%;
+	float:right;
+	margin-top:330px;
+}
+#mainTextPl p {
+	margin:0;
+	padding:10px 20px;
+	color:black;
+	font-size:190%;
 	text-indent:20px;
 	font-family:Arial, Impact, "Arial Black", sans-serif;
 	text-align:justify;
