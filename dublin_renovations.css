@@ -1,0 +1,121 @@
+/* dublin_renovations.css 17/03/2016 TG */
+body {
+	padding:0;
+	margin:0;
+}
+#header {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:200px;
+	background-color:gray;
+}
+#logo {
+	padding:0;
+	margin:0;
+	width:40%;
+	height:100%;
+	float:left;
+	font-size:120%;
+}
+#logo img {
+	margin:10px;
+	width:40%;
+	height:auto;
+	float:left;
+}
+#logo h1 {
+	font-family:"Arial Black", Impact, sans-serif;
+	color:black;
+}
+#language {
+	margin:15px;
+	float:right;
+}
+#language img {
+	width:30px;
+	height:20px;
+}
+#call {
+	visibility:hidden;
+	margin-top:30px;
+	float:right;
+	width:40%;
+	text-align:right;
+}
+#call a {
+	padding-right:20px;
+	margin:0;
+	font-size:200%;
+	font-family:Impact, "Arial Black", sans-serif;
+	text-decoration:none;
+	color:black;
+}
+#call a:hover {
+	color:white;
+}
+#navigation {
+	margin-top:60px;
+	padding:0;
+	float:left;
+	width:55%;
+	font-family:Impact, "Arial Black", sans-serif;
+	font-size:160%;
+	text-align:center;
+}
+ul.menu li {
+	display:inline;
+	padding-left:30px;
+	color:white;
+}
+ul.menu li a {
+	text-decoration:none;
+	color:black;
+}
+ul.menu li a:hover{
+	text-decoration:underline;
+}
+#uderHeader {
+	padding:0;
+	margin:0;
+	width:100%;
+	height:300px;
+	background: url("./images/underHeaderBackground1.jpg");
+	background-size:cover;
+}
+#uderHeader p  {
+	padding:20px 0 0 20px;
+	margin:0;
+	text-align:left;
+	font-family:Impact, "Arial Black", sans-serif;
+	font-size:170%;
+	color:black;
+}
+#uderHeader span {
+	padding-top:20px;
+	font-size:200%;
+}
+#mainText {
+	padding:0;
+	margin:50px 20% 20px;
+	text-align:justify;
+}
+#mainText p {
+	color:black;
+	font-size:150%;
+	text-indent:40px;
+	font-family:Arial, Impact, "Arial Black", sans-serif;
+}
+#footer {
+	width:100%;
+	margin-top:100px;
+	background-color:black;
+	
+}
+#footer p {
+	margin:0;
+	padding:10px 0 10px 0;
+	text-decoration:italic;
+	text-align:center;
+	color:white;
+}
