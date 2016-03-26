@@ -8,23 +8,32 @@ body {
 	background-attachment:fixed;
 	background-size:cover;
 }
+#bodyContainer {
+	padding:0;
+	margin:0 auto;
+	width:90%; 
+	min-width:1050px;
+	max-width:1400px;
+	height:auto;
+}
 #header {
-	margin:0;
+	margin:0 auto;
 	padding:0;
 	width:100%;
-	height:200px;
-	background-color:rgba(100, 100, 100, 0.9);
+	max-width:1400px;
+	height:170px;
+	background-color:rgba(100, 100, 100, 0.7);
 }
 #logo {
 	padding:0;
 	margin:0;
-	width:40%;
+	width:35%;
 	height:100%;
 	float:left;
 	font-size:120%;
 }
 #logo img {
-	margin:10px;
+	margin:0;
 	width:40%;
 	height:auto;
 	float:left;
@@ -60,8 +69,8 @@ body {
 	color:white;
 }
 #navigation {
-	margin:0;
-	padding:45px 0 0 0;
+	margin:10px auto 0;
+	padding:0 0 0 0;
 	float:left;
 	width:55%;
 	font-family:Impact, "Arial Black", sans-serif;
@@ -109,7 +118,7 @@ hr {
 }
 #mainTextBackground {
 	width:90%;
-	background:url("./images/underHeaderBackground3.jpg");
+	background:url("./images/underHeaderBackground4.jpg");
 	margin:0 auto 300px;
 	background-size:cover;
 	background-repeat:no-repeat;
@@ -118,7 +127,8 @@ hr {
 }
 #mainTextBackgroundPl {
 	width:100%;
-	height:650px;
+	height:auto;
+	min-height:500px;
 	background:url("./images/underHeaderBackground3.jpg");
 	padding:0;
 	margin:0;
@@ -127,11 +137,6 @@ hr {
 	background-attachment:center;
 	background-position:fixed;
 	overflow:hidden;
-}
-#background {
-	background-color:rgba(255, 255, 255, 0.3);
-	width:50%;
-	height:100%;
 }
 #uderHeader {
 	padding-top:20px;
@@ -171,16 +176,16 @@ hr {
 	font-family:Arial, Impact, "Arial Black", sans-serif;
 	text-align:justify;
 }
-
 #uderHeaderPl {
-	padding-top:20px;
-	margin-left:160px;
+		background-color:rgba(255, 255, 255, 0.3);
+
 	width:100%;
-	height:70px;	
+	height:auto;	
+	float:left;
 }
 #uderHeaderPl p  {
-	padding:20px 0 0 20px;
-	margin:0;
+	padding:10px;
+	margin:0 auto;
 	text-align:left;
 	font-family:Impact, "Arial Black", sans-serif;
 	font-size:170%;
@@ -192,19 +197,23 @@ hr {
 	font-size:200%;
 }
 #mainTextPl {
-	margin-top:70px;
-	margin-left:0;
-	width:100%;
-	height:auto;
+	background-color:rgba(255, 255, 255, 0.3);
+	margin:0 auto;
+	width:45%;
+	height:100%;
+	min-height:500px;
 	float:left;
+	color:black;
+	font-family:Arial, Impact, "Arial Black", sans-serif;
+}
+#mainTextPl span {
+	font-size:200%;
 }
 #mainTextPl p {
-	padding:25px 25px 25px 50px;
-	margin:0;
-	color:black;
+	padding:15px;
+	margin:0 auto;
 	font-size:150%;
 	text-indent:20px;
-	font-family:Arial, Impact, "Arial Black", sans-serif;
 	text-align:justify;
 }
 #aboutText {
