@@ -1,8 +1,5 @@
 /* dublinRenovationsStyle.css 17/03/2016 TG */
-html {
-	margin:0;
-	padding:0;
-}
+
 body {
 	margin:0;
 	padding:0;
@@ -12,11 +9,11 @@ body {
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
-	color:black;
+	color:rgb(0, 0, 0);
 }
 a {
 	text-decoration:none;
-	color:rgba(0, 0, 0, 1);
+	color:rgb(0, 0, 0);
 }
 hr {
 	margin:0;
@@ -25,9 +22,9 @@ hr {
 .body {
 	margin:0 auto;
 	width:100%;
-	min-width:1024px;
 	max-width:1280px;
 	box-sizing:border-box;
+	clear:both;
 }
 .mainHeader {
 	position:relative;
@@ -36,6 +33,12 @@ hr {
 	width: 100%;
 	height: 180px;
 	box-sizing:border-box;
+}
+.flag {
+	width: 30px;
+	height:20px;
+	float:right;
+	margin:10px 10px 0 0;
 }
 #headerLeft {
 	width:40%;
@@ -52,10 +55,6 @@ hr {
 	height:auto;
 	padding:10px 20px;
 }
-#headerLeft  p {
-	margin:50px auto;
-	font-size:200%;
-}
 #headerRight {
 	float:right;
 	width:55%;
@@ -64,12 +63,6 @@ hr {
 	margin:0 auto;
 	box-sizing:border-box;
 	font-family:"Arial Black", Impact, sans-serif;
-}
-.flag {
-	width: 30px;
-	height:20px;
-	float:right;
-	margin:10px 10px 0 0;
 }
 #contactHeader {
 	padding:10px;
@@ -115,7 +108,6 @@ a:hover {
 	margin:0 auto;
 	width:100%;
 	height:auto;
-	min-height:500px;
 	padding:0;
 	background-image:url("./images/mainContentBackground.jpg");
 	background-position:fixed;
@@ -206,7 +198,7 @@ a:hover {
 	transform:translate(-50%, -50%);
 }
 .fullPhoto { 
-	width:82%;
+	width:80%;
 	height:auto;
 	min-height:600px;
 	position:fixed;
@@ -224,6 +216,7 @@ a:hover {
 }
 #contactMain {
 	text-align:left;
+	text-indent:0px;
 	font-family:Arial, Impact, "Arial Black", sans-serif;
 	font-size:130%;
 	font-weight:bold;
@@ -248,4 +241,104 @@ a:hover {
 #footer p {
 	text-align:center;
 	text-decoration:italic;
+}
+/* small mobiles */
+@media only screen and (min-width:320px) and (max-width:479px) {
+	
+	.mainHeader {
+	position:relative;
+	height:auto;
+	float:left;
+	}
+	#headerLeft {
+		width:100%;
+	}
+	#headerLeft  img {
+		width:85%;
+		height:auto;
+		padding:0 20px;
+	}
+	#headerRight {
+		width:100%;
+	}
+	#contactHeader {
+		width:100%;
+		padding:30px 20px;
+		font-size:100%;
+	}
+	#contactHeader img {
+		width:25px;
+		height:25px;
+	}
+	#headerRight nav {
+		position:static;
+		float:left;
+		width:100%;
+	}
+	#headerRight  nav ul {
+		
+		padding:0;
+	}
+	#headerRight  nav ul li {
+		float:left;
+		width:100%;
+		padding:0;
+	}
+	#headerRight  nav ul li:hover {
+		background-color: rgba(100, 100, 100, 0.7);
+	}
+	.mainContent {
+		background-image:none;
+	}
+	.content {
+		background-color:rgba(200, 200, 200, 0.7);
+		width:100%;
+		font-size:70%;
+	}
+	.content p {
+		text-indent:20px;
+	}
+	.aboutText {
+		background-color:rgba(200, 200, 200, 0.7);
+		width:100%;
+		margin:0;
+		padding:30px 10px;
+		text-indent:20px;
+		border:none;
+		border-radius:0;
+		font-size:100%;
+	}
+	.galleryWraper {
+	margin:20px auto;
+	padding:10px;
+	}
+	.galleryLink {
+		margin:10px;
+		width:200px;
+		height:160px;
+	}
+	.thumb {
+		width:170px;
+		height:130px;
+		padding:5px;
+	}
+	.fullPhoto img {
+		max-height:350px;
+	}
+	.fullPhoto { 
+		width:60%;
+		min-height:350px;
+		border:solid 5px rgba(0, 0, 0, 1);
+	}
+	#contactMain {
+		font-size:90%;
+	}
+	#contactMain img {
+		width:50px;
+		padding:10px;
+	}
+	#footer {
+		font-size:70%;
+	}
+	
 }
