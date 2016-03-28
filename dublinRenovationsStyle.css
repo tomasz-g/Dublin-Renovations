@@ -4,6 +4,9 @@ body {
 	margin:0;
 	padding:0;
 	background-color:rgba(256, 256, 256, 1); 
+	/*
+	background-image:url("./images/backgroundNails.jpg");
+	*/
 	background-image:url("./images/mainBackground2.jpg");
 	background-position:center;
 	background-size:cover;
@@ -78,6 +81,7 @@ hr {
 	height:auto;
 	float:left;
 	font-size:130%;
+	box-sizing:border-box;
 }
 #contactHeader img {
 	width:35px;
