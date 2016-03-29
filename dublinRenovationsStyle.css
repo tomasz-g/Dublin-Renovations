@@ -3,7 +3,7 @@
 body {
 	margin:0;
 	padding:0;
-	background-color:rgba(256, 256, 256, 1); 
+	background-color:rgba(255, 255, 255, 1); 
 	/*
 	background-image:url("./images/backgroundNails.jpg");
 	*/
@@ -14,8 +14,6 @@ body {
 	background-attachment:fixed;
 	color:rgb(0, 0, 0);	
 	box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
 	clear:both;
 }
 a {
@@ -31,8 +29,6 @@ hr {
 	width:100%;
 	max-width:1280px;
 	box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
 	clear:both;
 }
 .mainHeader {
@@ -42,8 +38,6 @@ hr {
 	width: 100%;
 	height: 180px;
 	box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
 }
 .flag {
 	width: 30px;
@@ -64,7 +58,8 @@ hr {
 	float:left;
 	width:65%;
 	height:auto;
-	padding:10px 20px;
+	padding:10px 30px;
+	max-width:450px;
 }
 #headerRight {
 	float:right;
@@ -88,7 +83,7 @@ hr {
 	height:35px;
 }
 a:hover {
-	color: rgba(256, 256, 256, 1); 
+	color: rgba(255, 255, 255, 1); 
 }
 #headerRight nav {
 	position:absolute;
@@ -103,6 +98,7 @@ a:hover {
 	font-family:Impact, "Arial Black", sans-serif;
 	font-size:150%;
 	text-align:center;
+	box-sizing:border-box;
 }
 #headerRight nav ul {
 	list-style:none;
@@ -111,7 +107,7 @@ a:hover {
 #headerRight  nav ul li {
 	display:inline;
 	padding:0 0 0 30px;
-	color:rgba(256, 256, 256, 1); 
+	color:rgba(255, 255, 255, 1); 
 }
 #headerRight  nav ul li a:hover {
 	text-decoration:underline;
@@ -122,14 +118,10 @@ a:hover {
 	height:auto;
 	padding:0;
 	background-image:url("./images/mainContentBackground.jpg");
-	background-position:fixed;
 	background-size:cover;
 	background-repeat:no-repeat;
-	background-attachment:center;
 	overflow:hidden;
 	box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
 }
 .content {
 	background-color:rgba(255, 255, 255, 0.3);
@@ -246,14 +238,121 @@ a:hover {
 #footer a, #footer p {
 	margin:0;
 	padding:15px 10px 10px;
-	color: rgb(256, 256, 256); 
+	color: rgb(255, 255, 255); 
 }
 #footer a {
 	float:left;
 }
 #footer p {
 	text-align:center;
-	text-decoration:italic;
+	font-style:italic;
+}
+
+/* very small mobiles ******************************************** */
+
+@media only screen and (min-width:240px) and (max-width:319px) {
+	
+	.mainHeader {
+		height:auto;
+		float:left;
+	}
+	#headerLeft {
+		width:100%;
+	}
+	#headerLeft  img {
+		width:70%;
+		height:auto;
+		margin:0 auto;
+	}
+	#headerRight {
+		width:100%;
+	}
+	#contactHeader {
+		width:100%;
+		padding:25px 15px;
+		font-size:100%;
+	}
+	#contactHeader img {
+		width:20px;
+		height:20px;
+	}
+	#headerRight nav {
+		position:static;
+		float:left;
+		width:100%;
+		font-size:160%;
+		padding:0;
+	}
+	#headerRight  nav ul {
+		padding:0;
+	}
+	#headerRight  nav ul li {
+		border:solid 2px black;
+		border-radius:5px;
+		float:left;
+		width:100%;
+		padding:5px 0;
+		box-sizing:border-box;
+	}
+	#headerRight  nav ul li:hover {
+		background-color: rgba(100, 100, 100, 0.7);
+	}
+	.mainContent {
+		background-image:none;
+		box-sizing:border-box;
+	}
+	.content {
+		box-sizing:border-box;
+		background-color:rgba(200, 200, 200, 0.8);
+		width:100%;
+		font-size:50%;
+	}
+	.content p {
+		text-indent:15px;
+	}
+	.aboutText {
+		box-sizing:border-box;
+		background-color:rgba(200, 200, 200, 0.8);
+		width:100%;
+		margin:0;
+		padding:30px 8px;
+		text-indent:20px;
+		border:none;
+		border-radius:0;
+		font-size:100%;
+	}
+	.galleryWraper {
+		margin:20px auto;
+		padding:10px;
+	}
+	.galleryLink {
+		margin:10px;
+		width:200px;
+		height:160px;
+	}
+	.thumb {
+		width:170px;
+		height:130px;
+		padding:5px;
+	}
+	.fullPhoto img {
+		max-height:350px;
+	}
+	.fullPhoto { 
+		width:60%;
+		min-height:350px;
+		border:solid 5px rgba(0, 0, 0, 1);
+	}
+	#contactMain {
+		font-size:120%;
+	}
+	#contactMain img {
+		width:35px;
+		padding:10px 5px 10px 10px;
+	}
+	#footer {
+		font-size:70%;
+	}
 }
 
 /* small mobiles ******************************************** */
@@ -268,9 +367,9 @@ a:hover {
 		width:100%;
 	}
 	#headerLeft  img {
-		width:85%;
+		width:80%;
 		height:auto;
-		padding:0 20px;
+		margin:0 auto;
 	}
 	#headerRight {
 		width:100%;
@@ -288,32 +387,38 @@ a:hover {
 		position:static;
 		float:left;
 		width:100%;
+		font-size:170%;
+		padding:0;
 	}
 	#headerRight  nav ul {
-		
 		padding:0;
 	}
 	#headerRight  nav ul li {
+		border:solid 2px black;
+		border-radius:5px;
 		float:left;
 		width:100%;
-		padding:0;
+		padding:5px 0;
+		box-sizing:border-box;
 	}
 	#headerRight  nav ul li:hover {
 		background-color: rgba(100, 100, 100, 0.7);
 	}
 	.mainContent {
 		background-image:none;
+		box-sizing:border-box;
 	}
 	.content {
-		background-color:rgba(200, 200, 200, 0.7);
+		background-color:rgba(200, 200, 200, 0.8);
 		width:100%;
 		font-size:70%;
+		box-sizing:border-box;
 	}
 	.content p {
 		text-indent:20px;
 	}
 	.aboutText {
-		background-color:rgba(200, 200, 200, 0.7);
+		background-color:rgba(200, 200, 200, 0.8);
 		width:100%;
 		margin:0;
 		padding:30px 10px;
@@ -321,6 +426,7 @@ a:hover {
 		border:none;
 		border-radius:0;
 		font-size:100%;
+		box-sizing:border-box;
 	}
 	.galleryWraper {
 	margin:20px auto;
@@ -361,9 +467,9 @@ a:hover {
 @media only screen and (min-width:480px) and (max-width:767px) {
 	
 	.mainHeader {
-	position:relative;
-	height:auto;
-	float:left;
+		position:relative;
+		height:auto;
+		float:left;
 	}
 	#headerLeft {
 		width:100%;
@@ -371,15 +477,15 @@ a:hover {
 	#headerLeft  img {
 		width:85%;
 		height:auto;
-		padding:0 20px;
+		padding:0  0 10px 10%;
 	}
 	#headerRight {
 		width:100%;
 	}
 	#contactHeader {
 		width:100%;
-		padding:30px 20px;
-		font-size:100%;
+		padding:20px 0 20px 10%;
+		font-size:150%;
 	}
 	#contactHeader img {
 		width:25px;
@@ -389,43 +495,53 @@ a:hover {
 		position:static;
 		float:left;
 		width:100%;
+		font-size:170%;
+		padding:0;
+		background-color:initial;
 	}
 	#headerRight  nav ul {
-		
 		padding:0;
 	}
 	#headerRight  nav ul li {
+		border:solid 3px rgb(100, 100, 100);
+		background-color:rgba(150, 150, 150, 0.7);
+		box-sizing:border-box;
+		border-radius:10px;
 		float:left;
 		width:100%;
-		padding:0;
+		padding:5px 0;
 	}
 	#headerRight  nav ul li:hover {
-		background-color: rgba(100, 100, 100, 0.7);
+		background-color:rgba(100, 100, 100, 0.7);
 	}
 	.mainContent {
 		background-image:none;
 	}
 	.content {
-	background-color:rgba(200, 200, 200, 0.7);
-	width:100%;
-	font-size:70%;
+		background-color:rgba(200, 200, 200, 0.8);
+		width:100%;
+		font-size:70%;
+		padding:0 10%;
+	}
+	.content h2 {
+		padding-top:30px;
 	}
 	.content p {
 		text-indent:20px;
 	}
 	.aboutText {
-	background-color:rgba(200, 200, 200, 0.7);
-	width:100%;
-	margin:0;
-	padding:30px 10px;
-	text-indent:20px;
-	border:none;
-	border-radius:0;
-	font-size:100%;
+		background-color:rgba(200, 200, 200, 0.8);
+		width:100%;
+		margin:0;
+		padding:30px 10%;
+		text-indent:20px;
+		border:none;
+		border-radius:0;
+		font-size:100%;
 	}
 	.galleryWraper {
-	margin:20px auto;
-	padding:10px;
+		margin:20px auto;
+		padding:10px;
 	}
 	.galleryLink {
 		margin:10px;
@@ -459,24 +575,24 @@ a:hover {
 @media only screen and (min-width:768px) and (max-width:1023px) {
 	
 	.mainHeader {
-	height:auto;
-	float:left;
+		height:auto;
+		float:left;
 	}
 	#headerLeft {
 		width:50%;
 	}
 	#headerLeft  img {
-		width:90%;
+		width:75%;
 		height:auto;
-		padding:10% 10px;
+		padding:30px;
 	}
 	#headerRight {
 		width:50%;
 	}
 	#contactHeader {
 		width:100%;
-		padding:30px 20px 130px;
-		font-size:120%;
+		padding:30px 0 130px;
+		font-size:150%;
 	}
 	#contactHeader img {
 		width:35px;
@@ -500,14 +616,10 @@ a:hover {
 		height:auto;
 		padding:0;
 		background-image:url("./images/mainContentBackground.jpg");
-		background-position:fixed;
 		background-size:cover;
 		background-repeat:no-repeat;
-		background-attachment:center;
 		overflow:hidden;
 		box-sizing:border-box;
-		-moz-box-sizing:border-box;
-		-webkit-box-sizing:border-box;
 	}
 	.content {
 		background-color:initial;
@@ -520,7 +632,6 @@ a:hover {
 		color:black;
 		font-family:Arial, Impact, "Arial Black", sans-serif;
 		box-sizing:border-box;	
-		
 	}
 	.content h2 {
 		width:100%;
