@@ -7,7 +7,7 @@ body {
 	/*
 	background-image:url("./images/backgroundNails.jpg");
 	*/
-	background-image:url("./images/mainBackground2.jpg");
+	background-image:url("./images/mainBackground.jpg");
 	background-position:center;
 	background-size:cover;
 	background-repeat:no-repeat;
@@ -34,7 +34,7 @@ hr {
 .mainHeader {
 	position:relative;
 	margin: 0 auto;
-	background-color: rgba(180, 180, 180, 0.9);
+	background-color: rgba(180, 180, 180, 0.8);
 	width: 100%;
 	height: 180px;
 	box-sizing:border-box;
@@ -247,224 +247,95 @@ a:hover {
 	text-align:center;
 	font-style:italic;
 }
+	
+/* *********************************************************** */
 
-/* very small mobiles ******************************************** */
-
-@media only screen and (min-width:240px) and (max-width:319px) {
+@media only screen and (max-width:1023px) and (min-width:768px) {
 	
 	.mainHeader {
 		height:auto;
 		float:left;
 	}
 	#headerLeft {
-		width:100%;
+		width:50%;
 	}
 	#headerLeft  img {
-		width:70%;
+		width:75%;
 		height:auto;
-		margin:0 auto;
+		padding:30px;
 	}
 	#headerRight {
-		width:100%;
+		width:50%;
 	}
 	#contactHeader {
 		width:100%;
-		padding:25px 15px;
-		font-size:100%;
+		padding:30px 0 130px;
+		font-size:150%;
 	}
 	#contactHeader img {
-		width:20px;
-		height:20px;
+		width:35px;
+		height:35px;
 	}
 	#headerRight nav {
-		position:static;
-		float:left;
+		position:absolute;
+		left:0;
 		width:100%;
-		font-size:160%;
-		padding:0;
-	}
-	#headerRight  nav ul {
-		padding:0;
 	}
 	#headerRight  nav ul li {
-		border:solid 2px black;
-		border-radius:5px;
+		padding-left:10%;
 		float:left;
-		width:100%;
-		padding:5px 0;
-		box-sizing:border-box;
 	}
 	#headerRight  nav ul li:hover {
 		background-color: rgba(100, 100, 100, 0.7);
 	}
 	.mainContent {
-		background-image:none;
-		box-sizing:border-box;
-	}
-	.content {
-		box-sizing:border-box;
-		background-color:rgba(200, 200, 200, 0.8);
-		width:100%;
-		font-size:50%;
-	}
-	.content p {
-		text-indent:15px;
-	}
-	.aboutText {
-		box-sizing:border-box;
-		background-color:rgba(200, 200, 200, 0.8);
-		width:100%;
-		margin:0;
-		padding:30px 8px;
-		text-indent:20px;
-		border:none;
-		border-radius:0;
-		font-size:100%;
-	}
-	.galleryWraper {
-		margin:20px auto;
-		padding:10px;
-	}
-	.galleryLink {
-		margin:10px;
-		width:200px;
-		height:160px;
-	}
-	.thumb {
-		width:170px;
-		height:130px;
-		padding:5px;
-	}
-	.fullPhoto img {
-		max-height:350px;
-	}
-	.fullPhoto { 
-		width:60%;
-		min-height:350px;
-		border:solid 5px rgba(0, 0, 0, 1);
-	}
-	#contactMain {
-		font-size:120%;
-	}
-	#contactMain img {
-		width:35px;
-		padding:10px 5px 10px 10px;
-	}
-	#footer {
-		font-size:70%;
-	}
-}
-
-/* small mobiles ******************************************** */
-
-@media only screen and (min-width:320px) and (max-width:479px) {
-	
-	.mainHeader {
-	height:auto;
-	float:left;
-	}
-	#headerLeft {
-		width:100%;
-	}
-	#headerLeft  img {
-		width:80%;
-		height:auto;
 		margin:0 auto;
-	}
-	#headerRight {
 		width:100%;
-	}
-	#contactHeader {
-		width:100%;
-		padding:30px 20px;
-		font-size:100%;
-	}
-	#contactHeader img {
-		width:25px;
-		height:25px;
-	}
-	#headerRight nav {
-		position:static;
-		float:left;
-		width:100%;
-		font-size:170%;
+		height:auto;
 		padding:0;
-	}
-	#headerRight  nav ul {
-		padding:0;
-	}
-	#headerRight  nav ul li {
-		border:solid 2px black;
-		border-radius:5px;
-		float:left;
-		width:100%;
-		padding:5px 0;
-		box-sizing:border-box;
-	}
-	#headerRight  nav ul li:hover {
-		background-color: rgba(100, 100, 100, 0.7);
-	}
-	.mainContent {
-		background-image:none;
+		background-image:url("./images/mainContentBackground1.jpg");
+		background-size:cover;
+		background-repeat:no-repeat;
+		overflow:hidden;
 		box-sizing:border-box;
 	}
 	.content {
-		background-color:rgba(200, 200, 200, 0.8);
+		background-color:initial;
+		margin:0 auto;
+		padding:0;
 		width:100%;
-		font-size:70%;
-		box-sizing:border-box;
+		height:100%;
+		min-height:auto;
+		float:left;
+		color:black;
+		font-family:Arial, Impact, "Arial Black", sans-serif;
+		box-sizing:border-box;	
+	}
+	.content h2 {
+		width:100%;
+		padding:15px;
+		margin:0;
+		background-color:rgba(255, 255, 255, 0.3);
 	}
 	.content p {
-		text-indent:20px;
+		box-sizing:border-box;	
+		padding:20px 25px;
+		font-size:140%;
+		text-indent:25px;
+		margin:52% 0 0;
+		width:100%;
+		background-color:rgba(255, 255, 255, 0.3);
 	}
 	.aboutText {
-		background-color:rgba(200, 200, 200, 0.8);
-		width:100%;
-		margin:0;
-		padding:30px 10px;
-		text-indent:20px;
-		border:none;
-		border-radius:0;
-		font-size:100%;
-		box-sizing:border-box;
-	}
-	.galleryWraper {
-	margin:20px auto;
-	padding:10px;
-	}
-	.galleryLink {
-		margin:10px;
-		width:200px;
-		height:160px;
-	}
-	.thumb {
-		width:170px;
-		height:130px;
-		padding:5px;
-	}
-	.fullPhoto img {
-		max-height:350px;
-	}
-	.fullPhoto { 
-		width:60%;
-		min-height:350px;
-		border:solid 5px rgba(0, 0, 0, 1);
-	}
-	#contactMain {
-		font-size:120%;
-	}
-	#contactMain img {
-		width:35px;
-		padding:10px 5px 10px 10px;
-	}
-	#footer {
-		font-size:70%;
-	}
+		width:85%;
+		font-size:140%;
+	}	
 }
 
-/* mobiles ************************************************** */
 
-@media only screen and (min-width:480px) and (max-width:767px) {
+/* ********************************************************** */
+
+@media only screen and (max-width:767px) and (min-width:480px) {
 	
 	.mainHeader {
 		position:relative;
@@ -569,87 +440,217 @@ a:hover {
 		padding:10px;
 	}
 }
-	
-/* ipad ****************************************************** */
 
-@media only screen and (min-width:768px) and (max-width:1023px) {
+/* ********************************************************** */
+
+@media only screen and (max-width:479px) and (min-width:320px) {
+	
+	.mainHeader {
+	height:auto;
+	float:left;
+	}
+	#headerLeft {
+		width:100%;
+	}
+	#headerLeft  img {
+		width:80%;
+		height:auto;
+		margin:0 auto;
+	}
+	#headerRight {
+		width:100%;
+	}
+	#contactHeader {
+		width:100%;
+		padding:30px 20px;
+		font-size:100%;
+	}
+	#contactHeader img {
+		width:25px;
+		height:25px;
+	}
+	#headerRight nav {
+		position:static;
+		float:left;
+		width:100%;
+		font-size:170%;
+		padding:0;
+	}
+	#headerRight  nav ul {
+		padding:0;
+	}
+	#headerRight  nav ul li {
+		border:solid 2px black;
+		border-radius:5px;
+		float:left;
+		width:100%;
+		padding:5px 0;
+		box-sizing:border-box;
+	}
+	#headerRight  nav ul li:hover {
+		background-color: rgba(100, 100, 100, 0.7);
+	}
+	.mainContent {
+		background-image:none;
+		box-sizing:border-box;
+	}
+	.content {
+		background-color:rgba(200, 200, 200, 0.8);
+		width:100%;
+		font-size:70%;
+		box-sizing:border-box;
+	}
+	.content p {
+		text-indent:20px;
+	}
+	.aboutText {
+		background-color:rgba(200, 200, 200, 0.8);
+		width:100%;
+		margin:0;
+		padding:30px 10px;
+		text-indent:20px;
+		border:none;
+		border-radius:0;
+		font-size:100%;
+		box-sizing:border-box;
+	}
+	.galleryWraper {
+	margin:20px auto;
+	padding:10px;
+	}
+	.galleryLink {
+		margin:10px;
+		width:200px;
+		height:160px;
+	}
+	.thumb {
+		width:170px;
+		height:130px;
+		padding:5px;
+	}
+	.fullPhoto img {
+		max-height:350px;
+	}
+	.fullPhoto { 
+		width:60%;
+		min-height:350px;
+		border:solid 5px rgba(0, 0, 0, 1);
+	}
+	#contactMain {
+		font-size:120%;
+	}
+	#contactMain img {
+		width:35px;
+		padding:10px 5px 10px 10px;
+	}
+	#footer {
+		font-size:70%;
+	}
+}
+
+/* ********************************************************** */
+
+@media only screen and (max-width:319px) and (min-width:240px) {
 	
 	.mainHeader {
 		height:auto;
 		float:left;
 	}
 	#headerLeft {
-		width:50%;
+		width:100%;
 	}
 	#headerLeft  img {
-		width:75%;
+		width:70%;
 		height:auto;
-		padding:30px;
+		margin:0 auto;
 	}
 	#headerRight {
-		width:50%;
+		width:100%;
 	}
 	#contactHeader {
 		width:100%;
-		padding:30px 0 130px;
-		font-size:150%;
+		padding:25px 15px;
+		font-size:100%;
 	}
 	#contactHeader img {
-		width:35px;
-		height:35px;
+		width:20px;
+		height:20px;
 	}
 	#headerRight nav {
-		position:absolute;
-		left:0;
+		position:static;
+		float:left;
 		width:100%;
+		font-size:160%;
+		padding:0;
+	}
+	#headerRight  nav ul {
+		padding:0;
 	}
 	#headerRight  nav ul li {
-		padding-left:10%;
+		border:solid 2px black;
+		border-radius:5px;
 		float:left;
+		width:100%;
+		padding:5px 0;
+		box-sizing:border-box;
 	}
 	#headerRight  nav ul li:hover {
 		background-color: rgba(100, 100, 100, 0.7);
 	}
 	.mainContent {
-		margin:0 auto;
-		width:100%;
-		height:auto;
-		padding:0;
-		background-image:url("./images/mainContentBackground.jpg");
-		background-size:cover;
-		background-repeat:no-repeat;
-		overflow:hidden;
+		background-image:none;
 		box-sizing:border-box;
 	}
 	.content {
-		background-color:initial;
-		margin:0 auto;
-		padding:0;
+		box-sizing:border-box;
+		background-color:rgba(200, 200, 200, 0.8);
 		width:100%;
-		height:100%;
-		min-height:auto;
-		float:left;
-		color:black;
-		font-family:Arial, Impact, "Arial Black", sans-serif;
-		box-sizing:border-box;	
-	}
-	.content h2 {
-		width:100%;
-		padding:15px;
-		margin:0;
-		background-color:rgba(255, 255, 255, 0.3);
+		font-size:50%;
 	}
 	.content p {
-		box-sizing:border-box;	
-		padding:20px 25px;
-		font-size:140%;
-		text-indent:25px;
-		margin:50% 0 0;
-		width:100%;
-		background-color:rgba(255, 255, 255, 0.3);
+		text-indent:15px;
 	}
 	.aboutText {
-		width:85%;
-		font-size:140%;
-	}	
+		box-sizing:border-box;
+		background-color:rgba(200, 200, 200, 0.8);
+		width:100%;
+		margin:0;
+		padding:30px 8px;
+		text-indent:20px;
+		border:none;
+		border-radius:0;
+		font-size:100%;
+	}
+	.galleryWraper {
+		margin:20px auto;
+		padding:10px;
+	}
+	.galleryLink {
+		margin:10px;
+		width:200px;
+		height:160px;
+	}
+	.thumb {
+		width:170px;
+		height:130px;
+		padding:5px;
+	}
+	.fullPhoto img {
+		max-height:350px;
+	}
+	.fullPhoto { 
+		width:60%;
+		min-height:350px;
+		border:solid 5px rgba(0, 0, 0, 1);
+	}
+	#contactMain {
+		font-size:120%;
+	}
+	#contactMain img {
+		width:35px;
+		padding:10px 5px 10px 10px;
+	}
+	#footer {
+		font-size:70%;
+	}
 }
