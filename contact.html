@@ -10,20 +10,33 @@
 </head>
 
 <body class="body">
+
+<!-- The page header -->
 <header class="mainHeader" id="top">
+
+	<!-- two flag images on the top-right corner (one is link) -->
 	<a href="./kontakt.html"><img class="flag" src="./images/plLogo.png" title="polski" alt="polish flag"></a>
 	<img class="flag" src="./images/enLogo.png" title="english" alt="british flag">
 	
+<!-- left side of the header -->
 <div id="headerLeft">
+	
+	<!-- logo imige -->
 	<img id="logo" src="./images/marcelLogo.png" alt="Logo">
 </div>
+
+<!-- right side of the header -->
 <div id="headerRight">	
+	
+	<!-- email and telephone(link) -->
 	<div id="contactHeader">
 		<img  src="./images/telIcon.png" alt="telephone icon">
 			<a href="tel:+353850000000">0850000000</a><br>
 		<img src="./images/emailIcon.png" alt="email icon">
 		info@marcelbuilder.cu.cc
 	</div>
+	
+	<!-- navigation div with links to subpages -->
 	<nav><ul>
 		<a href="./index.html"><li class="link">HOME</li></a>
 		<a href="./aboutUs.html"><li class="link">ABOUT US</li></a>
@@ -33,6 +46,7 @@
 </div>
 </header><hr>
 
+<!-- main text div -->
 <div class="aboutText">
 	<div id="contactMain">
 		<img  src="./images/telIcon.png" alt="telephone icon">
@@ -43,6 +57,25 @@
 		info@marcelbuilder.cu.cc<hr>
 	</div>
 </div>
+
+<!-- The question box -->
+<fieldset class="question">
+	<legend>Have a question?</legend>
+	<form action="mailto:myEmail@gmail.com" method="post" enctype="text/plain">
+	<div>
+		<label for="name">Name:</label>
+		<input id="name" name="name" required>
+	</div>
+	<div>
+		<label for="email">Email:</label>
+		<input id="email" name="email" type="email" required>
+	</div>
+	<textarea id="textin" placeholder="question..."></textarea><br><br>
+		<input id="submit" type="image" src="./images/envelope.png" title="Send" alt="Submit">		
+	</form>
+</fieldset>
+
+<!-- table div -->
 <div class="tableContainer">
 <table><caption>WORKING HOURS</caption>
 <tr class="seson">
@@ -80,7 +113,6 @@
 	<td>9 - 4</td><td>9 - 4</td><td>9 - 4</td>
 	-->
 </tr>
-
 <tr class="day">
 	<th>WENDSDAY</th>
 	<td>8 - 4</td><td>8 - 5</td><td>8 - 5</td>
@@ -90,7 +122,6 @@
 	<td>9 - 4</td><td>9 - 4</td><td>9 - 4</td>
 	-->
 </tr>
-
 <tr class="day">
 	<th>THURSDAY</th>
 	<td>8 - 4</td><td>8 - 5</td><td>8 - 5</td>
@@ -100,7 +131,6 @@
 	<td>9 - 4</td><td>9 - 4</td><td>9 - 4</td>
 	-->
 </tr>
-
 <tr class="day">
 	<th>FRIDAY</th>
 	<td>8 - 4</td><td>8 - 5</td><td>8 - 5</td>
@@ -110,7 +140,6 @@
 	<td>9 - 4</td><td>9 - 4</td><td>9 - 4</td>
 	-->
 </tr>
-
 <tr class="day">
 	<th>SATURDAY</th>
 	<td>10 - 1</td><td>10 - 1</td><td>10 - 1</td>
@@ -120,7 +149,6 @@
 	<td>10 - 1</td><td>10 - 1</td><td>10 - 1</td>
 	-->
 </tr>
-
 <tr class="day">
 	<th>SUNDAY</th>
 	<td>CLOSED</td><td>CLOSED</td><td>CLOSED</td>

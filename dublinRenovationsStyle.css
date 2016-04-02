@@ -13,10 +13,12 @@ body {
 	box-sizing:border-box;
 	clear:both;
 }
+/* set text-decoration and color for links */
 a {
 	text-decoration:none;
 	color:rgb(0, 0, 0);
 }
+/* set 'hr' line style */
 hr {
 	margin:0;
 	padding:0;
@@ -79,9 +81,11 @@ hr {
 	width:35px;
 	height:35px;
 }
+/* links style on hover (when cursor over link) */
 a:hover {
 	color: rgb(255, 255, 255); 
 }
+/* navigation bar style */
 #headerRight nav {
 	position:absolute;
 	bottom:0;
@@ -106,16 +110,20 @@ a:hover {
 	display:inline;
 	padding:0 0 0 30px;
 }
+/* style of dead link on navigation bar - current page - */
 .current {
 	color:rgb(255, 255, 255); 
 }
+/* navigation bar links style */
 .link {
 	color:rgb(0, 0, 0); 
 }
+/* links style on hover (when cursor over link) */
 .link:hover {
 	text-decoration:underline;
 	color:rgb(255, 255, 255); 
 }
+/* main div style */
 .mainContent {
 	margin:0 auto;
 	width:100%;
@@ -127,6 +135,7 @@ a:hover {
 	overflow:hidden;
 	box-sizing:border-box;
 }
+/* div inside main div style */
 .content {
 	background-color:rgba(255, 255, 255, 0.3);
 	margin:0 auto;
@@ -148,6 +157,7 @@ a:hover {
 	line-height:1.3;
 	text-indent:30px;
 }
+/* main div style (if .mainContent class not on the page this class is main div) */
 .aboutText {
 	background-color:rgba(225, 225, 225, 0.8);
 	margin:50px auto;
@@ -165,6 +175,7 @@ a:hover {
 	border-radius:25px;
 	box-sizing:border-box;
 }
+/* photo div style */
 .galleryWraper {
 	background-color:rgba(255, 255, 255, 0.5);
 	margin:50px auto;
@@ -180,6 +191,7 @@ a:hover {
 	position:relative;
 	box-sizing:border-box;
 }
+/* small images in gallery style */
 .galleryLink {
 	margin:30px;
 	width:220px;
@@ -242,6 +254,81 @@ a:hover {
 	width:100px;
 	height:auto;
 	padding:20px;
+}
+/* comment box style
+- box position and size 
+- text size and font style
+- image as a background from URL */
+.question {
+	background-color:rgba(225, 225, 225, 0.8);
+	margin:50px auto;
+	padding:35px;
+	width:65%;
+	height:auto;
+	color:black;
+	font-family:Arial, Impact, "Arial Black", sans-serif;
+	font-size:130%;
+	font-weight:bold;
+	border-top:solid 3px rgb(100, 100, 100);
+	border-bottom:solid 3px rgb(100, 100, 100);
+	border-radius:25px;
+	box-sizing:border-box;
+}
+.question legend {
+	text-align:center;
+	font-size:200%;
+	padding:5px 10px;
+	border-top:solid 3px rgb(100, 100, 100);
+	border-bottom:solid 3px rgb(100, 100, 100);
+	border-radius:25px;
+	background-color:rgba(225, 225, 225, 0.8);
+}
+.question label, .question input {
+	display:inline-block;
+	width:50%;
+	padding:5px;
+}
+#textin {
+	padding:5px 5px 30px;
+	color:rgb(100, 100, 100);
+	font-size:100%;
+	width:100%;
+	background-color:rgba(255, 255, 255, 0.5);
+	border:solid;
+	margin:30px 0 0;
+}
+#textin:hover {
+	background-color:white;
+}
+/* submit button position and size */
+#submit {
+	padding:0;
+	margin:0;
+	width:40px;
+	height:auto;
+}
+#submit img {
+	padding:0;
+	margin:0;
+}
+/*code to change textarea-placeholder text color (gray by default)*/
+#textin::-webkit-input-placeholder { 
+    color:    #000000;	
+	font-weight:bold;
+}
+#textin::-moz-placeholder { 
+   color:    #000000;
+   opacity:  1;
+}
+#textin::-moz-placeholder {
+   color:    #000000;
+   opacity:  1;
+}
+#textin::-ms-input-placeholder {
+   color:    #000000;
+}
+#textin::placeholder-shown {
+  color:    #000000;
 }
 .tableContainer {
 	background-color:rgba(225, 225, 225, 0.8);
