@@ -38,6 +38,7 @@ hr {
 	height: 180px;
 	box-sizing:border-box;
 }
+/* links to change language */
 .flag {
 	width: 30px;
 	height:20px;
@@ -53,6 +54,7 @@ hr {
 	box-sizing:border-box;
 	font-family:"Arial Black", Impact, sans-serif;
 }
+/* top left corner logo image */
 #headerLeft  img {
 	float:left;
 	width:65%;
@@ -69,6 +71,7 @@ hr {
 	box-sizing:border-box;
 	font-family:"Arial Black", Impact, sans-serif;
 }
+/* contact details style */
 #contactHeader {
 	padding:10px;
 	width:70%;
@@ -191,7 +194,7 @@ a:hover {
 	position:relative;
 	box-sizing:border-box;
 }
-/* small images in gallery style */
+/* small images on gallery page */
 .galleryLink {
 	margin:30px;
 	width:220px;
@@ -209,11 +212,13 @@ a:hover {
 	text-decoration:underline;
 	color:rgb(0, 0, 0);
 }
+/* small images inside gallery */
 .thumb {
 	padding:10px;
 	width:190px;
 	height:150px;
 }
+/* big images inside gallery */
 .fullPhoto img {
 	width:auto;
 	max-width:100%;
@@ -239,10 +244,12 @@ a:hover {
 	background-color:rgba(0, 0, 0, 0.9);
 	border:solid 15px rgb(0, 0, 0);
 }
+/* make big image visible on hover */
 .galleryLink:hover .fullPhoto { 
 	visibility:visible;
 	border-radius:5px;
 }
+/* contact details on contct pages */
 #contactMain {
 	text-align:left;
 	text-indent:0px;
@@ -255,10 +262,7 @@ a:hover {
 	height:auto;
 	padding:20px;
 }
-/* comment box style
-- box position and size 
-- text size and font style
-- image as a background from URL */
+/* question box */
 .question {
 	background-color:rgba(225, 225, 225, 0.8);
 	margin:50px auto;
@@ -300,7 +304,6 @@ a:hover {
 #textin:hover {
 	background-color:white;
 }
-/* submit button position and size */
 #submit {
 	padding:0;
 	margin:0;
@@ -311,25 +314,7 @@ a:hover {
 	padding:0;
 	margin:0;
 }
-/*code to change textarea-placeholder text color (gray by default)*/
-#textin::-webkit-input-placeholder { 
-    color:    #000000;	
-	font-weight:bold;
-}
-#textin::-moz-placeholder { 
-   color:    #000000;
-   opacity:  1;
-}
-#textin::-moz-placeholder {
-   color:    #000000;
-   opacity:  1;
-}
-#textin::-ms-input-placeholder {
-   color:    #000000;
-}
-#textin::placeholder-shown {
-  color:    #000000;
-}
+/* openning hours table */
 .tableContainer {
 	background-color:rgba(225, 225, 225, 0.8);
 	margin:50px auto;
@@ -500,6 +485,14 @@ video {
 		border-bottom:solid 3px rgb(200, 200, 200);
 		border-radius:0;
 	}	
+	.question {
+		float:left;
+		margin:50px 0;
+		width:100%;
+		height:auto;
+		font-size:110%;
+		border-radius:0;
+	}
 	.tableContainer {
 		float:left;
 		width:100%;
@@ -618,6 +611,14 @@ video {
 		width:45px;
 		padding:10px;
 	}	
+	.question {
+		float:left;
+		margin:50px 0;
+		width:100%;
+		height:auto;
+		font-size:100%;
+		border-radius:0;
+	}
 	.tableContainer {
 		float:left;
 		width:100%;
@@ -733,6 +734,14 @@ video {
 	#contactMain img {
 		width:35px;
 		padding:20px 5px 10px 10px;
+	}
+	.question {
+		float:left;
+		margin:40px 0;
+		width:100%;
+		height:auto;
+		font-size:80%;
+		border-radius:0;
 	}
 	.tableContainer {
 		float:left;
@@ -858,6 +867,14 @@ video {
 	#contactMain img {
 		width:35px;
 		padding:15px 5px 10px 10px;
+	}
+	.question {
+		float:left;
+		margin:40px 0;
+		width:100%;
+		height:auto;
+		font-size:80%;
+		border-radius:0;
 	}
 	.tableContainer {
 		float:left;
