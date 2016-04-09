@@ -4,7 +4,7 @@ body {
 	margin:0;
 	padding:0;
 	background-color:rgba(255, 255, 255, 1); 
-	background-image:url("./images/mainBackground.jpg");
+	background-image:url("./images/blueprintBackground.jpg");
 	background-position:center;
 	background-size:cover;
 	background-repeat:no-repeat;
@@ -24,8 +24,8 @@ hr {
 	padding:0;
 }
 .body {
-	margin:0 auto;
-	width:100%;
+	margin:40px auto 150px;
+	width:80%;
 	max-width:1280px;
 	box-sizing:border-box;
 	clear:both;
@@ -59,7 +59,7 @@ hr {
 	float:left;
 	width:65%;
 	height:auto;
-	padding:10px 30px;
+	padding:10px 25px;
 	max-width:450px;
 }
 #headerRight {
@@ -73,16 +73,17 @@ hr {
 }
 /* contact details style */
 #contactHeader {
-	padding:10px;
-	width:70%;
+	margin:0;
+	padding:5px;
+	width:75%;
 	height:auto;
 	float:left;
 	font-size:130%;
 	box-sizing:border-box;
 }
 #contactHeader img {
-	width:35px;
-	height:35px;
+	width:30px;
+	height:30px;
 }
 /* links style on hover (when cursor over link) */
 a:hover {
@@ -101,7 +102,7 @@ a:hover {
 	border-left:solid 1px rgb(80, 80, 80);
 	border-top-left-radius:5px;
 	font-family:Impact, "Arial Black", sans-serif;
-	font-size:150%;
+	font-size:140%;
 	text-align:center;
 	box-sizing:border-box;
 }
@@ -111,7 +112,7 @@ a:hover {
 }
 #headerRight  nav ul li {
 	display:inline;
-	padding:0 0 0 30px;
+	padding:0 12px;
 }
 /* style of dead link on navigation bar - current page - */
 .current {
@@ -262,117 +263,6 @@ a:hover {
 	height:auto;
 	padding:20px;
 }
-/* question box */
-.question {
-	background-color:rgba(225, 225, 225, 0.8);
-	margin:50px auto;
-	padding:35px;
-	width:65%;
-	height:auto;
-	color:black;
-	font-family:Arial, Impact, "Arial Black", sans-serif;
-	font-size:130%;
-	font-weight:bold;
-	border-top:solid 3px rgb(100, 100, 100);
-	border-bottom:solid 3px rgb(100, 100, 100);
-	border-radius:25px;
-	box-sizing:border-box;
-}
-.question legend {
-	text-align:center;
-	font-size:200%;
-	padding:5px 10px;
-	border-top:solid 3px rgb(100, 100, 100);
-	border-bottom:solid 3px rgb(100, 100, 100);
-	border-radius:25px;
-	background-color:rgba(225, 225, 225, 0.8);
-}
-.question label, .question input {
-	display:inline-block;
-	width:50%;
-	padding:5px;
-}
-#textin {
-	padding:5px 5px 30px;
-	color:rgb(100, 100, 100);
-	font-size:100%;
-	width:100%;
-	background-color:rgba(255, 255, 255, 0.5);
-	border:solid;
-	margin:30px 0 0;
-}
-#textin:hover {
-	background-color:white;
-}
-#submit {
-	padding:0;
-	margin:0;
-	width:40px;
-	height:auto;
-}
-#submit img {
-	padding:0;
-	margin:0;
-}
-/* openning hours table */
-.tableContainer {
-	background-color:rgba(225, 225, 225, 0.8);
-	margin:50px auto;
-	width:65%;
-	height:auto;
-	color:black;
-	font-family:Arial, Impact, "Arial Black", sans-serif;
-	font-size:120%;
-	box-sizing:border-box;
-}
-table {
-	width:100%;
-	background-color:rgba(200, 200, 200, 0.9);
-}
-table caption {
-	font-size:200%;
-	padding:10px;
-	font-family:"Arial Black", Impact, sans-serif;
-}
-table, .seson th, .month th  {
-	border:solid 2px black;
-	border-collapse:collapse;
-	text-align:center;
-	padding:10px 0;
-}
-.day th, .day td {
-	border:solid 1px black;
-	border-collapse:collapse;
-	text-align:center;
-	padding:10px 0;
-	font-size:120%;
-}
-.seson th {
-	width:22.5%;
-}
-#tableLogo {
-	width:7.6%;
-}
-#tableLogo img {
-	width:80%;
-	height:auto;
-	padding:0;
-	margin:0;
-}
-.day td:nth-child(even) {
-	background-color:rgba(230, 230, 230, 0.8);
-}
-.day td:nth-child(odd) {
-	background-color:rgba(250, 250, 250, 0.8);
-}
-video {
-	width:80%;
-	height:auto;
-	margin:0 10%;
-	padding:0;
-	box-sizing:border-box;
-	border:solid 3px black;
-}
 #footer {
 	float:left;
 	width:100%;
@@ -484,19 +374,6 @@ video {
 		border-top:solid 2px rgb(200, 200, 200);
 		border-bottom:solid 3px rgb(200, 200, 200);
 		border-radius:0;
-	}	
-	.question {
-		float:left;
-		margin:50px 0;
-		width:100%;
-		height:auto;
-		font-size:110%;
-		border-radius:0;
-	}
-	.tableContainer {
-		float:left;
-		width:100%;
-		margin:0 0 50px;
 	}
 }
 
@@ -610,20 +487,6 @@ video {
 	#contactMain img {
 		width:45px;
 		padding:10px;
-	}	
-	.question {
-		float:left;
-		margin:50px 0;
-		width:100%;
-		height:auto;
-		font-size:100%;
-		border-radius:0;
-	}
-	.tableContainer {
-		float:left;
-		width:100%;
-		font-size:100%;
-		margin:0 0 50px;
 	}
 }
 
@@ -734,26 +597,6 @@ video {
 	#contactMain img {
 		width:35px;
 		padding:20px 5px 10px 10px;
-	}
-	.question {
-		float:left;
-		margin:40px 0;
-		width:100%;
-		height:auto;
-		font-size:80%;
-		border-radius:0;
-	}
-	.tableContainer {
-		float:left;
-		width:100%;
-		font-size:70%;
-		margin:0 0 40px;
-	}
-	table caption {
-		font-size:130%;
-	}
-	.day th, .day td {
-		padding:5px 0;
 	}
 	#footer {
 		font-size:70%;
@@ -867,26 +710,6 @@ video {
 	#contactMain img {
 		width:35px;
 		padding:15px 5px 10px 10px;
-	}
-	.question {
-		float:left;
-		margin:40px 0;
-		width:100%;
-		height:auto;
-		font-size:80%;
-		border-radius:0;
-	}
-	.tableContainer {
-		float:left;
-		width:100%;
-		font-size:70%;
-		margin:0 0 40px;
-	}
-	table caption {
-		font-size:130%;
-	}
-	.day th, .day td {
-		padding:5px 0;
 	}
 	#footer {
 		font-size:70%;
