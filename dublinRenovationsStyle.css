@@ -4,7 +4,7 @@ body {
 	margin:0;
 	padding:0;
 	background-color:rgba(255, 255, 255, 1); 
-	background-image:url("./images/finalBackground.jpg");
+	background-image:url("./images/mainBackground.jpg");
 	background-position:center;
 	background-size:cover;
 	background-repeat:no-repeat;
@@ -201,10 +201,10 @@ a:hover {
 }
 /* main div style (if .mainContent class not on the page this class is main div) */
 .aboutText {
-	background-color:rgba(225, 225, 225, 0.8);
+	background-color:rgba(255, 255, 255, 0.8);
 	margin:50px auto;
-	padding:35px;
-	width:65%;
+	padding:20px 65px;
+	width:100%;
 	height:auto;
 	color:black;
 	font-family:Arial, Impact, "Arial Black", sans-serif;
@@ -216,13 +216,15 @@ a:hover {
 	border-bottom:solid 3px rgb(100, 100, 100);
 	border-radius:25px;
 	box-sizing:border-box;
+	float:left;
 }
 /* photo div style */
 .galleryWraper {
-	background-color:rgba(255, 255, 255, 0.5);
-	margin:50px auto;
+	float:left;
+	background-color:rgba(255, 255, 255, 0.8);
+	margin:20px auto 50px;
 	padding:20px;
-	width:85%;
+	width:100%;
 	height:auto;
 	text-align:center;
 	font-family:"Arial Black", sans-serif;
