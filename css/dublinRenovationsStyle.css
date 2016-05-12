@@ -280,6 +280,10 @@ a:hover {
 	padding:0;
 	margin:0;
 }
+#contactMain a:hover {
+	color: rgb(0, 0, 0); 
+	text-decoration:underline;
+}
 #footer {
 	float:left;
 	width:100%;
