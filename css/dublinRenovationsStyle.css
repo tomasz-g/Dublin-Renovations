@@ -35,7 +35,7 @@ hr {
 	margin: 0 auto;
 	background-color: rgba(170, 170, 170, 0.8);
 	width: 100%;
-	height: 180px;
+	height: 200px;
 	box-sizing:border-box;
 }
 /* links to change language */
@@ -84,6 +84,11 @@ hr {
 #contactHeader img {
 	width:30px;
 	height:30px;
+}
+#contactHeader .tel_lang {
+	width: 20px;
+	height:14px;
+	padding-right:5px;
 }
 #contactHeader #emailTop {
 	width:20px;
