@@ -1,753 +1,136 @@
-/* dublinRenovationsStyle.css 17/03/2016 TG */
-
-body {
-	margin:0;
-	padding:0;
-	background-color:rgba(255, 255, 255, 1); 
-	background-image:url("../images/mainBackground.jpg");
-	background-position:center;
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-attachment:fixed;
-	color:rgb(0, 0, 0);	
-	box-sizing:border-box;
-	clear:both;
+body{margin:0;padding:0;background-color:rgba(255, 255, 255, 1);background-image:url("../images/mainBackground.jpg");background-position:center;background-size:cover;background-repeat:no-repeat;background-attachment:fixed;color:rgb(0, 0, 0);box-sizing:border-box;clear:both;}
+a{text-decoration:none;color:rgb(0, 0, 0);}
+hr{margin:0;padding:0;}
+.body{margin:40px auto 150px;width:80%;max-width:1280px;box-sizing:border-box;clear:both;}
+.mainHeader{position:relative;margin:0 auto;background-color:rgba(170, 170, 170, 0.8);width:100%;height:200px;box-sizing:border-box;}
+.flag{width:30px;height:20px;float:right;margin:10px 10px 0 0;}
+#headerLeft{width:40%;height:auto;padding:0;margin:0 auto;float:left;box-sizing:border-box;font-family:Arial, Impact, sans-serif;}
+#headerLeft img{float:left;width:65%;height:auto;padding:10px 25px;max-width:450px;}
+#headerRight{float:right;width:55%;height:auto;padding:0;margin:0 auto;box-sizing:border-box;font-family:Impact, Arial, sans-serif;}
+#contactHeader{margin:0;padding:5px;width:77%;height:auto;float:left;font-size:130%;box-sizing:border-box;}
+#contactHeader img{width:30px;height:30px;}
+#contactHeader .tel_lang{width:20px;height:14px;padding-right:5px;}
+#contactHeader #emailTop{width:20px;height:20px;}
+a:hover{color:rgb(255, 255, 255);}
+#headerRight nav{position:absolute;bottom:0;padding:10px 0;margin:0 auto;width:55%;height:auto;background-color:rgba(100, 100, 100, 0.7);border-top:solid 1px rgb(80, 80, 80);border-left:solid 1px rgb(80, 80, 80);border-top-left-radius:5px;font-family:Impact, Arial, sans-serif;font-size:140%;text-align:center;box-sizing:border-box;}
+#headerRight nav ul{list-style:none;margin:0 auto;}
+#headerRight nav ul li{display:inline;padding:0 10px;}
+.current{color:rgb(255, 255, 255);}
+.link{color:rgb(0, 0, 0);}
+.link:hover{text-decoration:underline;color:rgb(255, 255, 255);}
+.underHeader{width:100%;height:300px;background-image:url("../images/underHeaderBackground3.png");background-position:center;background-size:cover;background-repeat:no-repeat;box-sizing:border-box;padding:0;margin:0;float:left;}
+.underHeader img{width:100%;height:300px;padding:0;margin:0;float:left;}
+.mainContent{background-color:rgba(255, 255, 255, 0.8);margin:0 auto;width:100%;height:auto;padding:0;box-sizing:border-box;float:left;}
+.content{background-color:rgba(255, 255, 255, 0.3);margin:0 auto;padding:25px;width:45%;height:100%;min-height:auto;float:left;color:black;font-family:Cambria, Candara, Georgia, Palatino, Arial, sans-serif;box-sizing:border-box;}
+.content h2{font-size:120%;}
+.content span{font-size:200%;}
+.content p{font-size:130%;line-height:1.3;}
+.contentRight{margin:0 auto;padding:25px;width:55%;height:100%;min-height:auto;float:right;color:black;font-family:Cambria, Candara, Georgia, Palatino, Arial, sans-serif;box-sizing:border-box;}
+.contentRight p{font-size:130%;text-align:justify;line-height:1.3;text-indent:30px;}
+.aboutText{background-color:rgba(255, 255, 255, 0.8);margin:50px auto;padding:20px 65px;width:100%;height:auto;color:black;font-family:Cambria, Candara, Georgia, Palatino, Arial, sans-serif;font-size:130%;text-align:justify;line-height:1.3;text-indent:30px;border-top:solid 3px rgb(100, 100, 100);border-bottom:solid 3px rgb(100, 100, 100);border-radius:25px;box-sizing:border-box;float:left;}
+.galleryWraper{float:left;background-color:rgba(255, 255, 255, 0.5);margin:20px auto 50px;padding:20px;width:100%;height:auto;text-align:center;font-family:"Arial Black", "Franklin Gothic Medium", Cambria, Candara, Georgia, Palatino, Arial, sans-serif;font-size:x-large;border-top:solid 3px rgb(100, 100, 100);border-bottom:solid 3px rgb(100, 100, 100);border-radius:25px;position:relative;box-sizing:border-box;}
+.galleryLink{margin:30px;width:220px;height:180px;vertical-align:top;display:inline-block;border:solid 5px rgb(200, 200, 200);background-color:rgba(130, 130, 130, 0.8);border-radius:10px;}
+.galleryLink:hover{border:solid 5px rgb(90, 90, 90);}
+.galleryLink a:hover{text-decoration:underline;color:rgb(0, 0, 0);}
+.thumb{padding:10px;width:190px;height:150px;}
+#contactMain{text-align:left;text-indent:0px;font-family:Fantasy, Cambria, Candara, Georgia, Palatino, Arial, sans-serif;font-size:160%;font-weight:bold;}
+#contactMain img{width:100px;height:auto;padding:20px;}
+#contactMain .tel_lang{width:40px;height:25px;padding:0 15px;margin:0;}
+#contactMain #emailContact{width:40px;height:40px;padding:0;margin:0;}
+#contactMain a:hover{color:rgb(0, 0, 0);text-decoration:underline;}
+#footer{float:left;width:100%;background-color:rgb(0, 0, 0);}
+#footer a, #footer p{margin:0;padding:15px 10px 10px;color:rgb(255, 255, 255);}
+#footer a{float:left;}
+#footer p{text-align:center;font-style:italic;}
+@media only screen and (max-width:1023px) and (min-width:768px){.body{margin-top:25px;width:90%;}
+.mainHeader{height:auto;float:left;}
+#headerLeft{width:45%;}
+#headerLeft img{width:75%;height:auto;padding:25px;}
+#headerRight{width:55%;}
+#contactHeader{width:100%;padding:30px 0 110px;font-size:130%;}
+#contactHeader img{width:30px;height:30px;}
+#headerRight nav{position:absolute;border-left:none;border-top-left-radius:0px;left:0;width:100%;}
+#headerRight nav ul li{margin-left:7%;float:left;}
+.mainContent{font-size:91%;float:left;}
+.content h2{font-size:110%;}
+.content span{font-size:200%;}
+.content, .contentRight{padding:15px;}
+.aboutText{float:left;width:100%;font-size:140%;border-radius:0;margin:0 auto;border:none;padding:5% 10%}
+.galleryWraper{width:100%;float:left;margin:0;border-top:solid 2px rgb(200, 200, 200);border-bottom:solid 3px rgb(200, 200, 200);border-radius:0;}
 }
-/* set text-decoration and color for links */
-a {
-	text-decoration:none;
-	color:rgb(0, 0, 0);
+@media only screen and (max-width:767px) and (min-width:480px){.body{margin-top:10px;width:95%;}
+.mainHeader{position:relative;height:auto;float:left;}
+#headerLeft{width:100%;}
+#headerLeft img{width:85%;height:auto;padding:0 0 10px 10%;}
+#headerRight{width:100%;}
+#contactHeader{width:100%;padding:20px 0 20px 10%;font-size:150%;}
+#contactHeader img{width:25px;height:25px;}
+#headerRight nav{position:static;float:left;width:100%;font-size:170%;padding:0;background-color:initial;border:none;}
+#headerRight nav ul{padding:0;}
+#headerRight nav ul li{border:solid 3px rgb(100, 100, 100);background-color:rgba(150, 150, 150, 0.7);box-sizing:border-box;border-radius:10px;float:left;width:100%;padding:5px 0;}
+#headerRight nav ul li:hover{background-color:rgba(100, 100, 100, 0.7);}
+.underHeader{display:none;}
+.mainContent{float:left;background-color:rgba(255, 255, 255, 0.7);}
+.content{width:100%;font-size:112%;padding:0 10%;}
+.content h2{padding-top:30px;}
+.content p{text-indent:20px;}
+.contentRight{width:100%;font-size:112%;padding:0 10%;}
+.aboutText{float:left;width:100%;margin:0;padding:30px 10%;text-indent:20px;border:none;border-radius:0;font-size:120%;}
+.galleryWraper{padding:10px;width:100%;float:left;margin:0;border-top:solid 2px rgb(200, 200, 200);border-bottom:solid 3px rgb(200, 200, 200);border-radius:0;}
+.galleryLink{margin:10px;width:210px;height:170px;}
+.thumb{width:180px;height:140px;padding:5px;}
+#contactMain{font-size:120%;}
+#contactMain img{width:45px;padding:10px;}
+#contactMain #emailContact{width:20px;height:20px;padding:0;margin:0;}
 }
-/* set 'hr' line style */
-hr {
-	margin:0;
-	padding:0;
+@media only screen and (max-width:479px) and (min-width:320px){.body{margin:0;width:100%;}
+.mainHeader{height:auto;float:left;}
+#headerLeft{width:100%;}
+#headerLeft img{width:80%;height:auto;margin:0 auto;}
+#headerRight{width:100%;}
+#contactHeader{width:100%;padding:30px 20px;font-size:105%;}
+#contactHeader img{width:25px;height:25px;}
+#headerRight nav{position:static;float:left;width:100%;font-size:170%;padding:0;}
+#headerRight nav ul{padding:0;}
+#headerRight nav ul li{border:solid 2px black;border-radius:5px;float:left;width:100%;padding:5px 0;box-sizing:border-box;}
+#headerRight nav ul li:hover{background-color:rgba(100, 100, 100, 0.7);}
+.underHeader{display:none;}
+.mainContent{float:left;}
+.content{width:100%;font-size:81%;}
+.content p{text-indent:20px;}
+.contentRight{width:100%;font-size:81%;}
+.aboutText{float:left;width:100%;margin:0;padding:30px 10px;text-indent:20px;border:none;border-radius:0;font-size:100%;box-sizing:border-box;font-size:110%;}
+.galleryWraper{padding:10px;width:100%;float:left;margin:0;border-top:solid 2px rgb(200, 200, 200);border-bottom:solid 3px rgb(200, 200, 200);border-radius:0;}
+.galleryLink{margin:10px;width:200px;height:160px;}
+.thumb{width:170px;height:130px;padding:5px;}
+#contactMain{font-size:100%;}
+#contactMain img{width:35px;padding:20px 5px 10px 10px;}
+#contactMain #emailContact{width:20px;height:20px;padding:0;margin:0;}
+#footer{font-size:90%;}
 }
-.body {
-	margin:40px auto 150px;
-	width:80%;
-	max-width:1280px;
-	box-sizing:border-box;
-	clear:both;
-}
-.mainHeader {
-	position:relative;
-	margin: 0 auto;
-	background-color: rgba(170, 170, 170, 0.8);
-	width: 100%;
-	height: 200px;
-	box-sizing:border-box;
-}
-/* links to change language */
-.flag {
-	width: 30px;
-	height:20px;
-	float:right;
-	margin:10px 10px 0 0;
-}
-#headerLeft {
-	width:40%;
-	height:auto;
-	padding:0;
-	margin:0 auto;
-	float:left;
-	box-sizing:border-box;
-	font-family:Arial, Impact, sans-serif;
-}
-/* top left corner logo image */
-#headerLeft  img {
-	float:left;
-	width:65%;
-	height:auto;
-	padding:10px 25px;
-	max-width:450px;
-}
-#headerRight {
-	float:right;
-	width:55%;
-	height:auto;
-	padding:0;
-	margin:0 auto;
-	box-sizing:border-box;
-	font-family:Impact, Arial, sans-serif;
-}
-/* contact details style */
-#contactHeader {
-	margin:0;
-	padding:5px;
-	width:77%;
-	height:auto;
-	float:left;
-	font-size:130%;
-	box-sizing:border-box;
-}
-#contactHeader img {
-	width:30px;
-	height:30px;
-}
-#contactHeader .tel_lang {
-	width: 20px;
-	height:14px;
-	padding-right:5px;
-}
-#contactHeader #emailTop {
-	width:20px;
-	height:20px;
-}
-/* links style on hover (when cursor over link) */
-a:hover {
-	color: rgb(255, 255, 255); 
-}
-/* navigation bar style */
-#headerRight nav {
-	position:absolute;
-	bottom:0;
-	padding:10px 0;
-	margin:0 auto;
-	width:55%;
-	height:auto;
-	background-color: rgba(100, 100, 100, 0.7);
-	border-top:solid 1px rgb(80, 80, 80);
-	border-left:solid 1px rgb(80, 80, 80);
-	border-top-left-radius:5px;
-	font-family:Impact, Arial,  sans-serif;
-	font-size:140%;
-	text-align:center;
-	box-sizing:border-box;
-}
-#headerRight nav ul {
-	list-style:none;
-	margin:0 auto;
-}
-#headerRight  nav ul li {
-	display:inline;
-	padding:0 10px;
-}
-/* style of dead link on navigation bar - current page - */
-.current {
-	color:rgb(255, 255, 255); 
-}
-/* navigation bar links style */
-.link {
-	color:rgb(0, 0, 0); 
-}
-/* links style on hover (when cursor over link) */
-.link:hover {
-	text-decoration:underline;
-	color:rgb(255, 255, 255); 
-}
-/* under header image */
-.underHeader {
-	width:100%;
-	height:300px;
-	background-image:url("../images/underHeaderBackground3.png");
-	background-position:center;
-	background-size:cover;
-	background-repeat:no-repeat;
-	box-sizing:border-box;
-	padding:0;
-	margin:0;
-	float:left;
-}
-.underHeader img {
-	width:100%;
-	height:300px;
-	padding:0;
-	margin:0;
-	float:left;
-}
-/* main div style */
-.mainContent {
-	background-color:rgba(255, 255, 255, 0.8);
-	margin:0 auto;
-	width:100%;
-	height:auto;
-	padding:0;
-	box-sizing:border-box;
-	float:left;
-}
-/* div inside main div style */
-.content {
-	background-color:rgba(255, 255, 255, 0.3);
-	margin:0 auto;
-	padding:25px ;
-	width:45%;
-	height:100%;
-	min-height:auto;
-	float:left;
-	color:black;
-	font-family:Cambria, Candara, Georgia, Palatino, Arial, sans-serif;
-	box-sizing:border-box;	
-}
-.content h2 {
-	font-size:120%;
-}
-.content span {
-	font-size:200%;
-}
-.content p {
-	font-size:130%;
-	line-height:1.3;
-}
-.contentRight {
-	margin:0 auto;
-	padding:25px;
-	width:55%;
-	height:100%;
-	min-height:auto;
-	float:right;
-	color:black;
-	font-family:Cambria, Candara, Georgia, Palatino, Arial, sans-serif;
-	box-sizing:border-box;	
-}
-.contentRight p {
-	font-size:130%;
-	text-align:justify;
-	line-height:1.3;
-	text-indent:30px;
-}
-/* main div style (if .mainContent class not on the page this class is main div) */
-.aboutText {
-	background-color:rgba(255, 255, 255, 0.8);
-	margin:50px auto;
-	padding:20px 65px;
-	width:100%;
-	height:auto;
-	color:black;
-	font-family:Cambria, Candara, Georgia, Palatino, Arial, sans-serif;
-	font-size:130%;
-	text-align:justify;
-	line-height:1.3;
-	text-indent:30px;
-	border-top:solid 3px rgb(100, 100, 100);
-	border-bottom:solid 3px rgb(100, 100, 100);
-	border-radius:25px;
-	box-sizing:border-box;
-	float:left;
-}
-/* photo div style */
-.galleryWraper {
-	float:left;
-	background-color:rgba(255, 255, 255, 0.5);
-	margin:20px auto 50px;
-	padding:20px;
-	width:100%;
-	height:auto;
-	text-align:center;
-	font-family:"Arial Black", "Franklin Gothic Medium", Cambria, Candara, Georgia, Palatino, Arial, sans-serif;
-	font-size:x-large;
-	border-top:solid 3px rgb(100, 100, 100);
-	border-bottom:solid 3px rgb(100, 100, 100);
-	border-radius:25px;
-	position:relative;
-	box-sizing:border-box;
-}
-/* small images on gallery page */
-.galleryLink {
-	margin:30px;
-	width:220px;
-	height:180px;
-	vertical-align:top;
-	display:inline-block;
-	border:solid 5px rgb(200, 200, 200);
-	background-color:rgba(130, 130, 130, 0.8);
-	border-radius:10px;
-}
-.galleryLink:hover  {
-	border:solid 5px rgb(90, 90, 90);
-}
-.galleryLink a:hover {
-	text-decoration:underline;
-	color:rgb(0, 0, 0);
-}
-/* small images inside gallery */
-.thumb {
-	padding:10px;
-	width:190px;
-	height:150px;
-}
-/* contact details on contct pages */
-#contactMain {
-	text-align:left;
-	text-indent:0px;
-	font-family:Fantasy, Cambria, Candara, Georgia, Palatino, Arial, sans-serif;
-	font-size:160%;
-	font-weight:bold;
-}
-#contactMain img {
-	width:100px;
-	height:auto;
-	padding:20px;
-}
-#contactMain .tel_lang {
-	width: 40px;
-	height:25px;
-	padding:0 15px;
-	margin:0;
-}
-#contactMain #emailContact {
-	width:40px;
-	height:40px;
-	padding:0;
-	margin:0;
-}
-#contactMain a:hover {
-	color: rgb(0, 0, 0); 
-	text-decoration:underline;
-}
-#footer {
-	float:left;
-	width:100%;
-	background-color:rgb(0, 0, 0);
-}
-#footer a, #footer p {
-	margin:0;
-	padding:15px 10px 10px;
-	color: rgb(255, 255, 255); 
-}
-#footer a {
-	float:left;
-}
-#footer p {
-	text-align:center;
-	font-style:italic;
-}
-/* *********************************************************** */
-
-@media only screen and (max-width:1023px) and (min-width:768px) {
-	
-	.body {
-	margin-top:25px;
-	width:90%;
-	}
-	.mainHeader {
-		height:auto;
-		float:left;
-	}
-	#headerLeft {
-		width:45%;
-	}
-	#headerLeft  img {
-		width:75%;
-		height:auto;
-		padding:25px;
-	}
-	#headerRight {
-		width:55%;
-	}
-	#contactHeader {
-		width:100%;
-		padding:30px 0 110px;
-		font-size:130%;
-	}
-	#contactHeader img {
-		width:30px;
-		height:30px;
-	}
-	#headerRight nav {
-		position:absolute;
-		border-left:none;
-		border-top-left-radius:0px;
-		left:0;
-		width:100%;
-	}
-	#headerRight  nav ul li {
-		margin-left:7%;
-		float:left;
-	}
-	.mainContent {
-		font-size:91%;
-		float:left;
-	}
-	.content h2 {
-	font-size:110%;
-	}
-	.content span {
-		font-size:200%;
-	}
-	.content, .contentRight {
-		padding:15px;
-	}
-	.aboutText {
-		float:left;
-		width:100%;
-		font-size:140%;
-		border-radius:0;
-		margin:0 auto;
-		border:none;
-		padding: 5% 10%
-	}	
-	.galleryWraper {
-		width:100%;
-		float:left;
-		margin:0;
-		border-top:solid 2px rgb(200, 200, 200);
-		border-bottom:solid 3px rgb(200, 200, 200);
-		border-radius:0;
-	}
-}
-
-/* ********************************************************** */
-
-@media only screen and (max-width:767px) and (min-width:480px) {
-	
-	.body {
-	margin-top:10px;
-	width:95%;
-	}
-	.mainHeader {
-		position:relative;
-		height:auto;
-		float:left;
-	}
-	#headerLeft {
-		width:100%;
-	}
-	#headerLeft  img {
-		width:85%;
-		height:auto;
-		padding:0  0 10px 10%;
-	}
-	#headerRight {
-		width:100%;
-	}
-	#contactHeader {
-		width:100%;
-		padding:20px 0 20px 10%;
-		font-size:150%;
-	}
-	#contactHeader img {
-		width:25px;
-		height:25px;
-	}
-	#headerRight nav {
-		position:static;
-		float:left;
-		width:100%;
-		font-size:170%;
-		padding:0;
-		background-color:initial;
-		border:none;
-	}
-	#headerRight  nav ul {
-		padding:0;
-	}
-	#headerRight  nav ul li {
-		border:solid 3px rgb(100, 100, 100);
-		background-color:rgba(150, 150, 150, 0.7);
-		box-sizing:border-box;
-		border-radius:10px;
-		float:left;
-		width:100%;
-		padding:5px 0;
-	}
-	#headerRight  nav ul li:hover {
-		background-color:rgba(100, 100, 100, 0.7);
-	}
-	.underHeader {
-		display:none;
-	}
-	.mainContent {
-		float:left;
-		background-color:rgba(255, 255, 255, 0.7);
-	}
-	.content {
-		width:100%;
-		font-size:112%;
-		padding:0 10%;
-	}
-	.content h2 {
-		padding-top:30px;
-	}
-	.content p {
-		text-indent:20px;
-	}
-	.contentRight {
-		width:100%;
-		font-size:112%;
-		padding:0 10%;
-	}
-	.aboutText {
-		float:left;
-		width:100%;
-		margin:0;
-		padding:30px 10%;
-		text-indent:20px;
-		border:none;
-		border-radius:0;
-		font-size:120%;
-	}
-	.galleryWraper {
-		padding:10px;
-		width:100%;
-		float:left;
-		margin:0;
-		border-top:solid 2px rgb(200, 200, 200);
-		border-bottom:solid 3px rgb(200, 200, 200);
-		border-radius:0;
-	}
-	.galleryLink {
-		margin:10px;
-		width:210px;
-		height:170px;
-	}
-	.thumb {
-		width:180px;
-		height:140px;
-		padding:5px;
-	}
-	#contactMain {
-		font-size:120%;
-	}
-	#contactMain img {
-		width:45px;
-		padding:10px;
-	}
-	#contactMain #emailContact {
-	width:20px;
-	height:20px;
-	padding:0;
-	margin:0;
-	}
-}
-
-/* ********************************************************** */
-
-@media only screen and (max-width:479px) and (min-width:320px) {
-	
-	.body {
-	margin:0;
-	width:100%;
-	}
-	.mainHeader {
-	height:auto;
-	float:left;
-	}
-	#headerLeft {
-		width:100%;
-	}
-	#headerLeft  img {
-		width:80%;
-		height:auto;
-		margin:0 auto;
-	}
-	#headerRight {
-		width:100%;
-	}
-	#contactHeader {
-		width:100%;
-		padding:30px 20px;
-		font-size:105%;
-	}
-	#contactHeader img {
-		width:25px;
-		height:25px;
-	}
-	#headerRight nav {
-		position:static;
-		float:left;
-		width:100%;
-		font-size:170%;
-		padding:0;
-	}
-	#headerRight  nav ul {
-		padding:0;
-	}
-	#headerRight  nav ul li {
-		border:solid 2px black;
-		border-radius:5px;
-		float:left;
-		width:100%;
-		padding:5px 0;
-		box-sizing:border-box;
-	}
-	#headerRight  nav ul li:hover {
-		background-color: rgba(100, 100, 100, 0.7);
-	}
-	.underHeader {
-		display:none;
-	}
-	.mainContent {
-		float:left;
-	}
-	.content {
-		width:100%;
-		font-size:81%;
-	}
-	.content p {
-		text-indent:20px;
-	}
-	.contentRight {
-		width:100%;
-		font-size:81%;
-	}
-	.aboutText {
-		float:left;
-		width:100%;
-		margin:0;
-		padding:30px 10px;
-		text-indent:20px;
-		border:none;
-		border-radius:0;
-		font-size:100%;
-		box-sizing:border-box;
-		font-size:110%;
-	}
-	.galleryWraper {
-		padding:10px;
-		width:100%;
-		float:left;
-		margin:0;
-		border-top:solid 2px rgb(200, 200, 200);
-		border-bottom:solid 3px rgb(200, 200, 200);
-		border-radius:0;
-	}
-	.galleryLink {
-		margin:10px;
-		width:200px;
-		height:160px;
-	}
-	.thumb {
-		width:170px;
-		height:130px;
-		padding:5px;
-	}
-	#contactMain {
-		font-size:100%;
-	}
-	#contactMain img {
-		width:35px;
-		padding:20px 5px 10px 10px;
-	}
-	#contactMain #emailContact {
-	width:20px;
-	height:20px;
-	padding:0;
-	margin:0;
-	}
-	#footer {
-		font-size:90%;
-	}
-}
-
-/* ********************************************************** */
-
-@media only screen and (max-width:319px) and (min-width:240px) {
-	
-	.body {
-		width:100%;
-		margin:0;
-	}
-	.mainHeader {
-		height:auto;
-		float:left;
-	}
-	#headerLeft {
-		width:100%;
-	}
-	#headerLeft  img {
-		width:70%;
-		height:auto;
-		margin:0 auto;
-	}
-	#headerRight {
-		width:100%;
-	}
-	#contactHeader {
-		width:100%;
-		padding:25px 15px;
-		font-size:100%;
-	}
-	#contactHeader img {
-		width:20px;
-		height:20px;
-	}
-	#contactHeader #emailTop {
-	width:15px;
-	height:15px;
-	}
-	#headerRight nav {
-		position:static;
-		float:left;
-		width:100%;
-		font-size:160%;
-		padding:0;
-	}
-	#headerRight  nav ul {
-		padding:0;
-	}
-	#headerRight  nav ul li {
-		border:solid 2px black;
-		border-radius:5px;
-		float:left;
-		width:100%;
-		padding:5px 0;
-		box-sizing:border-box;
-	}
-	#headerRight  nav ul li:hover {
-		background-color: rgba(100, 100, 100, 0.7);
-	}
-	.underHeader {
-		display:none;
-	}
-	.mainContent {
-		float:left;
-	}
-	.content {
-		width:100%;
-		font-size:73%;
-	}
-	.content p {
-		text-indent:15px;
-	}
-	.contentRight {
-		width:100%;
-		font-size:73%;
-	}
-	.aboutText {
-		box-sizing:border-box;
-		width:100%;
-		margin:0;
-		padding:30px 8px;
-		text-indent:20px;
-		border:none;
-		border-radius:0;
-		font-size:100%;
-		float:left;
-	}
-	.galleryWraper {
-		padding:10px;
-		width:100%;
-		float:left;
-		margin:0;
-		border-top:solid 2px rgb(200, 200, 200);
-		border-bottom:solid 3px rgb(200, 200, 200);
-		border-radius:0;
-	}
-	.galleryLink {
-		margin:10px;
-		width:200px;
-		height:160px;
-	}
-	.thumb {
-		width:170px;
-		height:130px;
-		padding:5px;
-	}
-	#contactMain {
-		font-size:120%;
-	}
-	#contactMain img {
-		width:35px;
-		padding:15px 5px 10px 10px;
-	}
-	#contactMain #emailContact {
-	width:17px;
-	height:17px;
-	padding:0;
-	margin:0;
-	}
-	#footer {
-		font-size:90%;
-	}
+@media only screen and (max-width:319px) and (min-width:240px){.body{width:100%;margin:0;}
+.mainHeader{height:auto;float:left;}
+#headerLeft{width:100%;}
+#headerLeft img{width:70%;height:auto;margin:0 auto;}
+#headerRight{width:100%;}
+#contactHeader{width:100%;padding:25px 15px;font-size:100%;}
+#contactHeader img{width:20px;height:20px;}
+#contactHeader #emailTop{width:15px;height:15px;}
+#headerRight nav{position:static;float:left;width:100%;font-size:160%;padding:0;}
+#headerRight nav ul{padding:0;}
+#headerRight nav ul li{border:solid 2px black;border-radius:5px;float:left;width:100%;padding:5px 0;box-sizing:border-box;}
+#headerRight nav ul li:hover{background-color:rgba(100, 100, 100, 0.7);}
+.underHeader{display:none;}
+.mainContent{float:left;}
+.content{width:100%;font-size:73%;}
+.content p{text-indent:15px;}
+.contentRight{width:100%;font-size:73%;}
+.aboutText{box-sizing:border-box;width:100%;margin:0;padding:30px 8px;text-indent:20px;border:none;border-radius:0;font-size:100%;float:left;}
+.galleryWraper{padding:10px;width:100%;float:left;margin:0;border-top:solid 2px rgb(200, 200, 200);border-bottom:solid 3px rgb(200, 200, 200);border-radius:0;}
+.galleryLink{margin:10px;width:200px;height:160px;}
+.thumb{width:170px;height:130px;padding:5px;}
+#contactMain{font-size:120%;}
+#contactMain img{width:35px;padding:15px 5px 10px 10px;}
+#contactMain #emailContact{width:17px;height:17px;padding:0;margin:0;}
+#footer{font-size:90%;}
 }
